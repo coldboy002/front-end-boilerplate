@@ -1,10 +1,17 @@
 
 .cache/
 coverage/
-dist/*
+dist/
 !dist/index.html
+development/
+build/
 node_modules/
 *.log
+.env
+package-lock.json
+yarn.lock
+npm-debug.log
+yarn-error.log
 
 # OS generated files
 .DS_Store
