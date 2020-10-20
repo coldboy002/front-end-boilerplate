@@ -1,26 +1,42 @@
 {
   "name": "front-end-starter-kit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple workflow starter for building vanilla JS apps",
   "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "scripts": {
-    "clean": "rm dist/bundle.js",
+    "clean": "rm -rf dist .cache",
     "start": "parcel src/index.html",
     "build-prod": "parcel build src/index.html"
   },
+  "repository": "https://github.com/coldboy002/front-end-boilerplate.git",
+  "keywords": [
+    "parcel",
+    "starter-kit"
+  ],
+  "author": "coldboy002 <coldboy002@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coldboy002/front-end-boilerplate/issues"
+  },
+  "homepage": "https://github.com/coldboy002/front-end-boilerplate#readme",
   "dependencies": {},
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
-    "postcss-modules": "^3.2.2",
-    "autoprefixer": "^10.0.1",
+    "@csstools/normalize.css": "^11.0.1",
+    "autoprefixer": "^9.8.6",
     "eslint": "^7.11.0",
-    "prettier": "^2.1.2",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.13.0",
-    "eslint-plugin-prettier": "^3.1.4"
-  }
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^3.2.2",
+    "prettier": "^2.1.2",
+    "sass": "^1.27.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
