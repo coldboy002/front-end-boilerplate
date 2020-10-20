@@ -1,0 +1,99 @@
+{
+  "files.autoSave": "onFocusChange",
+  // Set the default
+  // Set the default
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Enable per-language
+  "[javascript, javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact"
+  ],
+  "stylelint.validate": [
+    "css",
+    "postcss",
+    "scss"
+  ],
+  // Auto-Fix on Save for either TSLint or ESLint
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": true,
+    // For TSLint
+    "source.fixAll.tslint": true,
+    // For Stylelint
+    "source.fixAll.stylelint": true
+  },
+  "prettier.requireConfig": true,
+  // git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "gitSemanticCommit.types": [
+    {
+      "type": "📦 chore",
+      "description": "Updating compiled files or packages"
+    },
+    {
+      "type": "🤖 ci",
+      "description": "Changing CI"
+    },
+    {
+      "type": "🔧 config",
+      "description": "Changing configuration files"
+    },
+    {
+      "type": "🚀 deploy",
+      "description": "Deploying code"
+    },
+    {
+      "type": "📝 docs",
+      "description": "Writing documentation"
+    },
+    {
+      "type": "✨ feat",
+      "description": "Introducing a new feature"
+    },
+    {
+      "type": "🐛 fix",
+      "description": "Fixing a bug"
+    },
+    {
+      "type": "🙈 ignore",
+      "description": "Adding or updating a .gitignore,.eslintignore,... file"
+    },
+    {
+      "type": "🎉 init",
+      "description": "Initial commit"
+    },
+    {
+      "type": "⚡ perf",
+      "description": "Improving performance"
+    },
+    {
+      "type": "♻️ refactor",
+      "description": "Refactoring code"
+    },
+    {
+      "type": "🔥 remove",
+      "description": "Removing code or files"
+    },
+    {
+      "type": "⏪ revert",
+      "description": "Reverting changes"
+    },
+    {
+      "type": "💄 style",
+      "description": "Updating the UI or style files"
+    },
+    {
+      "type": "✅ test",
+      "description": "Adding tests"
+    }
+  ]
+}
