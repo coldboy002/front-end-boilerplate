@@ -4,9 +4,12 @@
   "description": "Simple workflow starter for building vanilla JS apps",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf dist .cache",
-    "start": "parcel src/index.pug",
-    "build-prod": "parcel build src/index.pug"
+    "clean:dev": "rimraf development .cache",
+    "dev": "parcel src/index.pug --out-dir development",
+    "start": "yarn clean:dev && yarn dev",
+    "clean:prod": "rimraf dist .cache",
+    "build-prod": "parcel build src/index.pug",
+    "build": "yarn clean:prod && parcel build src/index.pug --out-dir dist"
   },
   "repository": "https://github.com/coldboy002/front-end-boilerplate.git",
   "keywords": [
@@ -38,6 +41,7 @@
     "postcss-modules": "^3.2.2",
     "prettier": "^2.1.2",
     "pug": "^3.0.0",
+    "rimraf": "^3.0.2",
     "sass": "^1.27.0",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
